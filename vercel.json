@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ],
+  "routes": [
+    { "src": "/register", "dest": "/api/register" },
+    { "src": "/login", "dest": "/api/login" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "build": {
+    "env": {
+      "HOST": "129.148.55.118",
+      "PORT": "3306",
+      "USER": "QualityAdmin",
+      "PASSWORD": "@Tesla1977",
+      "DATABASE": "qualityseg_db",
+      "SECRET_KEY": "secret_key"
+    }
+  }
+}
